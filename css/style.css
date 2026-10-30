@@ -120,6 +120,39 @@ p { margin: 0 0 16px; }
 
 /* ---------- Home page ---------- */
 
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.profile-photo {
+  flex: 0 0 auto;
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+}
+
+.intro-text .subtitle { margin-bottom: 18px; line-height: 1.5; }
+
+.affiliation-logo {
+  display: inline-block;
+  border-radius: 6px;
+}
+
+/* The logo has a transparent background and navy lettering, so it sits on a
+   white panel in dark mode to stay legible. */
+@media (prefers-color-scheme: dark) {
+  .affiliation-logo { background: #ffffff; padding: 8px 10px; }
+}
+.affiliation-logo img {
+  display: block;
+  width: 220px;
+  height: auto;
+}
+
 .profile-links {
   list-style: none;
   padding: 0;
@@ -266,4 +299,7 @@ footer .inner {
   main { padding-top: 28px; }
   h1 { font-size: 1.6rem; }
   .entries li { grid-template-columns: 1fr; gap: 0; padding: 8px 0; }
+  .intro { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .profile-photo { width: 150px; }
+  .affiliation-logo img { width: 190px; }
 }
