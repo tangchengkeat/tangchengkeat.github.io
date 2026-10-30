@@ -135,7 +135,7 @@ p { margin: 0 0 16px; }
   border: 1px solid var(--rule);
 }
 
-.intro-text .subtitle { margin-bottom: 18px; line-height: 1.5; }
+.intro-text .subtitle { margin-bottom: 14px; line-height: 1.5; }
 
 .affiliation-logo {
   display: inline-block;
@@ -145,11 +145,11 @@ p { margin: 0 0 16px; }
 /* The logo has a transparent background and navy lettering, so it sits on a
    white panel in dark mode to stay legible. */
 @media (prefers-color-scheme: dark) {
-  .affiliation-logo { background: #ffffff; padding: 8px 10px; }
+  .affiliation-logo { background: #ffffff; padding: 5px 7px; }
 }
 .affiliation-logo img {
   display: block;
-  width: 220px;
+  width: 140px;
   height: auto;
 }
 
@@ -301,5 +301,5 @@ footer .inner {
   .entries li { grid-template-columns: 1fr; gap: 0; padding: 8px 0; }
   .intro { flex-direction: column; align-items: flex-start; gap: 20px; }
   .profile-photo { width: 150px; }
-  .affiliation-logo img { width: 190px; }
+  .affiliation-logo img { width: 120px; }
 }
