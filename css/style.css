@@ -210,6 +210,8 @@ p { margin: 0 0 16px; }
 
 .selected .pub-venue { font-size: 0.95rem; }
 
+.selected li.wide { grid-column: 1 / -1; }
+
 .more-link {
   font-family: var(--sans);
   font-size: 0.95rem;
